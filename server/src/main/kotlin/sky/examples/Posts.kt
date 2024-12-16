@@ -10,8 +10,8 @@ val posts = arrayOf(
     Post("Whoa2", "Sky", "dwdwd"),
 )
 
+// returns HTML element with a rendered post from above array, with index as provided
 fun BODY.post(index: Int?) {
-    // returns HTML element with a rendered post from above array, with index as provided
     if (index != null && index < posts.size) {
         div {
             id = "post-view"
@@ -32,6 +32,7 @@ fun BODY.post(index: Int?) {
     }
 }
 
+// a form with id parameter and submit button
 fun BODY.form() {
 
     // input with ID parameter
